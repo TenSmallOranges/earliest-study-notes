@@ -1,0 +1,26 @@
+html,body,img,input,button,ul,ol,dl,li,dt,dd,h1,h2,h3,h4,h5,h6,div,p,form,span,a,em,ins,i,s,del,strong{
+    margin: 0;
+    padding: 0;
+}
+a,em,ins,i,s,del,strong,a:hover{
+    text-decoration: none;
+    font-style: normal;
+    color: #333;
+}
+img,input,button,select{
+    border: 0;
+    outline: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+body{
+    font-family: "Microsoft Yahei", Consolas, Arial;
+    color: #333;
+    background-color: #f8f8f8;
+}
+.clearfix::before,.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}

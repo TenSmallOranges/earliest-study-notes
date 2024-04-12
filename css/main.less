@@ -1,0 +1,183 @@
+//媒体查询 ▼
+    //此部分放置在js设置
+
+//页面头部 ▼
+header {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  background-color: #3d3d3d;
+  overflow: hidden;
+  h1{
+    color: #fff;
+    line-height: 50px;
+    margin: 0;
+    font-size: 2.5rem;
+    font-family: 'Dodger';
+  }
+}
+
+//导航部分 ▼
+nav {
+  box-sizing: border-box;
+  width: 18rem;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 14%;
+  padding-right: 1rem;
+  padding-left: 3rem;
+  overflow: hidden;
+  color: #fff;
+  > div {
+    box-sizing: border-box;
+    font-family: "Bookman Old Style", "Microsoft Yahei";
+    text-align: left;
+    width: 100%;
+    line-height: 3rem;
+    padding-left: 3rem;
+    cursor: pointer;
+    > span {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      outline: none;
+      &:hover, &:focus {
+        em {
+          position: absolute;
+          top: .3rem;
+          left: -1rem;
+          width: .3rem;
+          height: 2rem;
+          background-color: #ccc;
+        }
+      }
+    }
+    > ul {
+      height: 0;
+      overflow: hidden;
+      transition: all .5s;
+      > li {
+        color: #888;
+        font-size: 1rem;
+        font-family: "Microsoft Yahei";
+        box-sizing: border-box;
+        line-height: 1.4rem;
+        height: 1.4rem;
+        overflow: hidden;
+        text-align: left;
+        padding-left: 10%;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+  }
+  .base::before,.advanced::before,.extend::before,.practice::before{
+    position: absolute;
+    left: -4rem;
+    top: 0;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+  }
+  .base::before{
+    content: "基础";
+  }
+  .advanced::before{
+    content: "进阶";
+  }
+  .extend::before{
+    content: "延伸";
+  }
+  .practice::before{
+    content: "实践";
+  }
+}
+
+//文章部分 ▼
+article {
+  width: 100%;
+  max-width: 1920px;
+  height: 100%;
+  transition: all .5s;
+}
+
+//主体内容 ▼
+main {
+  width: auto;
+  margin-left: 18rem;
+  padding-right: 3rem;
+  > div {
+    height: 0;
+    overflow: hidden;
+    transition: all .5s;
+    > div {
+      padding-top: 1.7rem;
+      &:nth-of-type(1) {
+        padding-top: 0;
+        padding-bottom: 3rem;
+        h4 {
+          padding-top: 7rem;
+          background-color: transparent;
+          border: none;
+          color: #333;
+          padding-left: 0;
+          margin-left: 2rem;
+          font-size: 1.5rem;
+          padding-bottom: 2rem;
+          width: 40rem;
+          border-bottom: 1px solid #ccc;
+          border-radius: 0;
+        }
+        p {
+          text-indent: 2rem;
+          padding-top: 1rem;
+        }
+      }
+    }
+  }
+  h5 {
+    font-size: 1.1rem;
+    padding-left: 2rem;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    border: 1px solid #ccc;
+    background-color: #cc7a6f;
+    color: #fff;
+    border-radius: 4px;
+  }
+  pre {
+    width: 70rem;
+    padding-left: 2rem;
+    border-radius: 4px;
+    font-family: Consolas;
+    white-space: pre-wrap; /* css-3 */ 
+    a{
+      border: 1px solid #ccc;
+      background-color: skyblue;
+    }
+  }
+}
+
+//页脚部分 ▼
+foot {
+  box-sizing: border-box;
+  width: 100%;
+  height: 1.3rem;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  background-color: #fff;
+  text-align: right;
+  padding-right: 8rem;
+}
+
+html, body{
+  height: 100%;
+}
